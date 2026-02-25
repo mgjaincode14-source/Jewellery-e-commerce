@@ -1,0 +1,124 @@
+/* ===== Modal Overlay (same as login) ===== */
+.signup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(3px);
+}
+
+/* ===== Modal Box ===== */
+.signup-container {
+  width: 450px;
+  min-height: 500px;
+  background-color: #fffdd0;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== Close Button ===== */
+.signup-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signup-close:hover {
+  background-color: red;
+}
+
+/* ===== Heading & Text ===== */
+.signup-container h2 {
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.signup-container p {
+  margin-bottom: 20px;
+}
+
+/* ===== Input Fields ===== */
+.signup-input {
+  width: 90%;
+  padding: 12px 20px;
+  border-radius: 45px;
+  border: 1px solid black;
+  background-color: #fffdd0;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+/* ===== OTP Row ===== */
+.signup-otp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.signup-otp-row input {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 45px;
+  border: 1px solid black;
+  background-color: #fffdd0;
+  outline: none;
+}
+
+/* OTP Button */
+.signup-otp-btn {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.signup-otp-btn:hover {
+  background-color: rgb(240, 56, 56);
+}
+
+/* ===== Main Button ===== */
+.signup-btn {
+  height: 46px;
+  border-radius: 25px;
+  border: none;
+  background: #5b21b6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: red;
+}
+
+/* ===== Bottom Link ===== */
+.signup-link {
+  margin-top: 15px;
+}
+
+.signup-link span {
+  color: rgb(88, 74, 243);
+  text-decoration: underline;
+  cursor: pointer;
+}

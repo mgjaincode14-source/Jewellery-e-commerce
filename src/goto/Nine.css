@@ -1,0 +1,68 @@
+.section-title {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.threeitems {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 20px;
+    gap: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    width: 100%;
+    object-fit: contain; 
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.Go_one {
+    background-color: rgb(8, 59, 198);
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    font-size: 1rem;
+    padding: 10px 25px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.Go_one:hover {
+    background-color: red;
+}
