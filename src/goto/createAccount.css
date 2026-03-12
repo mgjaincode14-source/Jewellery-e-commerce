@@ -1,0 +1,58 @@
+.create-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.create-container {
+  width: 450px;
+  min-height: 500px;
+  background-color: #fffdd0;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-container h2 {
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.create-container p {
+  margin-bottom: 20px;
+}
+
+.create-input {
+  width: 90%;
+  padding: 12px 20px;
+  border-radius: 45px;
+  border: 1px solid black;
+  background-color: #fffdd0;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.create-btn {
+  height: 46px;
+  border-radius: 25px;
+  border: none;
+  background: #5b21b6;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.create-btn:hover {
+  background: red;
+}

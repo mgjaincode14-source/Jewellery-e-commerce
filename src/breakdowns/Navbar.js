@@ -1,39 +1,31 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
-
-  const navigate = useNavigate();
+  const navLinkStyle = ({ isActive }) => ({
+    backgroundColor: isActive ? 'white' : 'black',
+    color: isActive ? 'black' : 'white',
+    padding: '5px 10px',
+    borderRadius: '4px',
+    textDecoration: 'none',
+    display: 'inline-block'
+  });
 
   return (
-    <>
-      <nav className='Stick'>
-        <div className="first">
-          {props.heading}
-          <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => navigate("/about")}>About Us</li>
-          <li onClick={() => navigate("/contact")}>Contact</li>
-          <li onClick={() => navigate("/cardxqr")}>Visiting Card</li>
-        </div>
+    <nav className='Stick'>
+      <div className="first">
+        {props.heading}
+        <NavLink style={navLinkStyle} to="/">Home</NavLink>
+        <NavLink style={navLinkStyle} to="/about">About Us</NavLink>
+        <NavLink style={navLinkStyle} to="/contact">Contact</NavLink>
+        <NavLink style={navLinkStyle} to="/cardxqr">Visiting Card</NavLink>
+      </div>
 
-        {/* <div className="mid">
-          <input type="search" id="search" placeholder="Search here..." />
-        </div> */}
-
-        <div className="last">
-          <label className="box" onClick={() => navigate("/cart")}>
-            My Cart
-          </label>
-
-          <label className="box" onClick={() => navigate("/signup")}>
-            Sign Up
-          </label>
-
-          <label className="box" onClick={() => navigate("/login")}>
-            Log In
-          </label>
-        </div>
-      </nav>
-    </>
+      <div className="last">
+        <NavLink  style={navLinkStyle} to="/cart">My Cart</NavLink>
+        <NavLink  style={navLinkStyle} to="/signup">Sign Up</NavLink>
+        <NavLink  style={navLinkStyle} to="/login">Log In</NavLink>
+      </div>
+    </nav>
   );
 }
